@@ -1,10 +1,10 @@
 import express from "express";
 import cors from "cors";
-//import router from "./app/routes/index.router.js";
-//import { errorsHandler } from "./app/middlewares/index.middleware.js";
+import router from "./app/routes/index.router.js";
+import { errorsHandler } from "./app/middlewares/index.middleware.js";
 import logger from "morgan";
 import fs from "fs";
-//import error404 from "./app/middlewares/error404.js";
+import error404 from "./app/middlewares/error.404.js";
 const app = express();
 
 app.use(cors());
@@ -19,7 +19,7 @@ app.use(
   })
 );
 
-//app.use(router);
-//app.use(errorsHandler);
-//app.all("*", error404);
+app.use(router);
+app.use(errorsHandler);
+app.all("*", error404);
 export default app;

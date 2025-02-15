@@ -1,17 +1,17 @@
 import { client } from "../services/index.service.js";
 
 
-const hadithDatamapper = {
+const croyanceDatamapper = {
     get: async function (id) {
-        const sql = `SELECT * FROM hadith WHERE id = $1`;
+        const sql = `SELECT * FROM croyance WHERE id = $1`;
         const result = await client.query(sql, [id]);
         return result.rows[0];
     },
     getAll: async function () {
-        const sql = `SELECT * FROM hadith`;
+        const sql = `SELECT * FROM croyance`;
         const result = await client.query(sql);
         return result.rows;
     },
 };
 
-export default  hadithDatamapper;
+export default  croyanceDatamapper;

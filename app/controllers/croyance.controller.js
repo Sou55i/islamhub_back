@@ -1,14 +1,14 @@
 import db from "../models/index.datamapper.js";
 import { Error404 } from "../utils/errors/index.utils.js";
 
-const hadithController = {
+const croyanceController = {
     getAll: async function (request, response, next) {
         try {
-            const hadiths = await db.hadith.getAll();
-            if (!hadiths)
+            const croyances = await db.croyance.getAll();
+            if (!croyances)
                 return next(new Error404('No hadith found'));
-            response.json(hadiths);
-            } catch (error) {
+            response.json(croyances);
+        } catch (error) {
             error.type = "database";
             error.method = request.method;
             error.message = "Error in getting all hadiths";
@@ -19,10 +19,10 @@ const hadithController = {
     get: async function (request, response, next) {
         const { id } = request.params;
         try {
-            const hadith = await db.hadith.get(id);
-            if (!hadith)
+            const croyance = await db.croyance.get(id);
+            if (!croyance)
                 return next(new Error404('Hadith not found'));
-            response.json(hadith);
+            response.json(croyance);
         } catch (error) {
             error.type = "database";
             error.method = request.method;
@@ -57,4 +57,4 @@ const hadithController = {
      */
 };
 
-export default hadithController;
+export default croyanceController;

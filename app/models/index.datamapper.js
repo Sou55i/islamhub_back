@@ -1,7 +1,11 @@
-import hadithDamage from '../models/hadith.datamapper.js';
+import hadithDatamapper from "./hadith.datamapper.js";
+import croyanceDatamapper from "./croyance.datamapper.js";
 
 
-const db = hadithDamage.db;
+const db = {
+    hadith: hadithDatamapper,
+    croyance: croyanceDatamapper
+};
 
 
 
