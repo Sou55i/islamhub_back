@@ -1,10 +1,10 @@
 BEGIN;
 
 -- Supprimer toutes les données de la table "invocation" et réinitialiser les séquences
-TRUNCATE TABLE "invocation" RESTART IDENTITY CASCADE;
+TRUNCATE TABLE "dhikr" RESTART IDENTITY CASCADE;
 
 -- Insérer des invocations
-INSERT INTO "invocation" (
+INSERT INTO "dhikr" (
     "sujet",
     "texte_arabe",
     "texte_francais",
@@ -20,7 +20,7 @@ VALUES
         'Nous enseignons cette invocation à ceux qui avait atteint le discernement parmi nos enfants. Et ceux qui n’avait pas encore atteint le discernement, on l’écrivait et on l’accrochait à leurs cous',
         '''a`ôudhou bi kalimâti l-Lâhi t-tâmmâti min ghaḍabihi wa `iqâbih wa charri `ibâdih wa min hamazâti ch-chayâṭîn wa ''an yaḥḍourôun',
         'Invocation demandant la paix et la protection.',
-        NULL,
+        4,
         'At-tirmîdhiyy a dit: « c’est un ḥadīth qui est ḥaçan »'
     );
 

@@ -14,7 +14,7 @@ INSERT INTO "croyance" (
 )
 VALUES
     (
-        'Croyance 1',
+        'Attributs de Allah',
         'اللهُ مَوْجُودٌ بِلاَ كَيْفٍ وَلاَ مَكَان',
         'Dieu existe sans endroit et sans comment.',
         5,
@@ -24,12 +24,14 @@ VALUES
         'audio_1.mp3'
     ),
     (
-        'Croyance 2',
-        'توحيد الله',
+        'Attributs de Allah',
+        ' لَوْ كَانَ فِيهِمَا آلِهَةٌ إِلَّا اللَّـهُ لَفَسَدَتَا ۚ',
         'Unicité de Dieu',
         5,
         'Sujet sur le tawhid',
-        'Tawhidu Allahi',
-        'Explication approfondie sur le tawhid (unicité).',
+        'Law kāna fīhimā ''ālihatoun ''il-la l-Lāhou lafaçadatā',
+        'ce qui signifie: « S''il y avait [pour le ciel et la terre] des dieux hormis Allāh, [les cieux et les terres] seraient certes en discordance » [soūrat al-''Anbiyā'' / ''āyah 22].',
         'audio_2.mp3'
     );
+
+COMMIT ;
