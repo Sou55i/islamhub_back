@@ -22,6 +22,26 @@ VALUES
         'Invocation demandant la paix et la protection.',
         4,
         'At-tirmîdhiyy a dit: « c’est un ḥadīth qui est ḥaçan »'
+    ),
+    (
+        'Dhikr',
+        'الله الله ربّي لا أُشركُ به شيئًا',
+        'Allāh, Allāh est mon Seigneur, je ne lui associe rien.',
+        'Allāhou Allāhou rabbī lā `ouchrikou bihī chay`â',
+        '',
+        4,
+        'Évocation à faire matin et soir.'
+    ),
+    (
+        'Dhikr',
+        'لا إله إلا الله محمد رسول الله',
+        'Il n’y a de dieu qu’Allah et Muhammad est son messager.',
+        'Lā ilāha illā Allāhou Muhammadou rasoulou Allāh',
+        '',
+        4,
+        'La base de la croyance islamique.'
     );
+
+
 
 COMMIT;

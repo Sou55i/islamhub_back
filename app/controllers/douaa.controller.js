@@ -57,4 +57,4 @@ const douaaController = {
      */
 };
 
-export default croyanceController;
+export default douaaController;

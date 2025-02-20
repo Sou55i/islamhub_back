@@ -57,4 +57,4 @@ const dhikrController = {
      */
 };
 
-export default croyanceController;
+export default dhikrController;

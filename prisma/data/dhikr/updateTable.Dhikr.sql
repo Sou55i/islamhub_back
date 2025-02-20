@@ -1,5 +1,5 @@
 BEGIN;
 
-ALTER TABLE "evocation" RENAME TO "dhikr";
+ALTER TABLE "invocation" RENAME TO "dhikr";
 
 COMMIT;
