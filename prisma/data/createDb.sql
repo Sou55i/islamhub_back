@@ -54,7 +54,7 @@ CREATE TABLE "biographie" (
                               "texte" TEXT NOT NULL
 );
 
--- Création de la table "invocation"
+-- Création de la table "dhikr"
 CREATE TABLE "invocation" (
                               "id" SERIAL PRIMARY KEY,
                               "sujet" VARCHAR(255) NOT NULL,
